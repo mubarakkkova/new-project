@@ -1,0 +1,16 @@
+.about {
+  margin: 40px;
+  background-color: aliceblue;
+  padding: 30px;
+  opacity: 0.96;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  margin-top: 60px;
+  background-color: gray;
+  border: 10px gray solid;
+}

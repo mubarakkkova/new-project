@@ -1,0 +1,32 @@
+<div class="productDetail">
+  <h3> {{ curProduct[0].name }} </h3>
+  <!-- <div *ngFor="let img of curProduct.image_gallery" >
+    <img class="imgGal" src="{{ img }}" width="100%">
+  </div> -->
+
+  <img class="imgGal" src="{{ curProduct[0].image}}" width="100%">
+
+  <ul>
+    <li>
+      price: {{ curProduct[0].price }} $
+    </li>
+    <li>
+      likes: {{ curProduct[0].likes }}
+    </li>
+    <li>
+      rating: {{ curProduct[0].rating }}
+    </li>
+    <li>
+      description: {{ curProduct[0].description }}
+    </li>
+  </ul>
+  <button class="buy" type="button" (click)="addToCart(curProduct[0])">Buy</button>
+
+  <a routerLink="/products/{{curProduct[0].id}}/comments/1">Comments</a>
+
+</div>
+
+
+
+<a *ngIf="prevProduct && curCategory.id === prevProduct[0].category_id" routerLink='/categories/{{curCategory.id}}/products/{{prevProduct[0].id}}'><p class="rotateNeigh" id="prev"><i class="prevProd arrow"></i>{{ prevProduct[0].name }}</p></a>
+<a *ngIf="nextProduct && curCategory.id === nextProduct[0].category_id" routerLink='/categories/{{curCategory.id}}/products/{{nextProduct[0].id}}'><p class="rotateNeigh" id="next">{{ nextProduct[0].name }} <i class="nextProd arrow"></i></p></a>

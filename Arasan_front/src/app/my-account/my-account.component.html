@@ -1,0 +1,16 @@
+<div class="myAcc">
+  <div>
+    <p>{{ currentAcc.name }} {{ currentAcc.surname }}</p>
+    <img class="img" width="200px" src="https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_6644093cfddbc17ea03b8595_6644093dfddbc17ea03b8719/scale_1200">
+  </div>
+  <div class="userDesc">
+    <p>Age: {{ currentAcc.age }} </p>
+    <p>Info: {{ currentAcc.addInfo }} </p>
+    <p>Story:</p>
+    <ul class="orderStory" *ngFor="let order of currentAcc.orderStory">
+      <li>
+        {{ order }}
+      </li>
+    </ul>
+  </div>
+</div>

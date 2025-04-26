@@ -1,0 +1,60 @@
+.main {
+  margin: 3%;
+  padding: 4%;
+  background-color: rgb(207, 212, 212);
+  opacity: 0.95;
+}
+
+.head {
+  background-color: rgba(251, 247, 181, 0.717);
+  padding: 1%;
+  text-align: center;
+}
+
+.content-row {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+  background-color: gainsboro;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.content-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.content-row img {
+  width: 220px;
+  height: auto;
+  border-radius: 15px;
+  border: 3px solid gray;
+}
+
+.text-block {
+  flex: 1;
+}
+
+.icons {
+  margin-right: 20px;
+  width: 30px;
+}
+
+.floatRight {
+  float: right;
+}
+
+.bot {
+  margin-top: 100px;
+}
+
+.botButtons {
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.botButtons:hover {
+  color: rgb(255, 218, 185);
+}

@@ -1,0 +1,93 @@
+<div class="main">
+
+  <div class="head">
+    <h1><i>WELCOME TO ARASAN RESTAURANT</i></h1>
+  </div>
+
+  <div>
+
+    <!-- Картинка слева -->
+    <div class="content-row">
+      <img src="../../assets/images/Restaurant/logo.jpg" alt="Arasan Restaurant exterior" />
+      <div class="text-block">
+        <h2>Arasan Restaurant:</h2>
+        <p>
+          Welcome to Arasan Restaurant! At Arasan Restaurant, we bring you a rich variety of dishes from around the world.
+          Whether you’re craving Chinese cuisine, Italian pasta, French delicacies, fresh seafood, traditional dishes,
+          fast food favorites, sweet confectionery, or refreshing drinks — you’ll find it all here.
+          Enjoy a cozy atmosphere, delicious food, and warm hospitality in one place!
+        </p>
+      </div>
+    </div>
+
+    <!-- Картинка справа -->
+    <div class="content-row reverse">
+      <img src="../../assets/images/we.png" alt="We are the best" />
+      <div class="text-block">
+        <h2>We are the best:</h2>
+        <p>
+          At Arasan Restaurant, we offer a wide variety of dishes from different cuisines, prepared with fresh ingredients and great care.
+          We welcome every guest with a smile and pay attention to every detail to make your visit special.
+          People come to us not just for a meal, but to experience warmth, the taste of home, and true hospitality.
+        </p>
+      </div>
+    </div>
+
+    <!-- Картинка слева -->
+    <div class="content-row">
+      <img src="../../assets/images/family.jpg" alt="Restaurant Theme" />
+      <div class="text-block">
+        <h2>Restaurant theme:</h2>
+        <p>
+          Our restaurant is a place where traditions and hospitality come together.
+          The interior is inspired by the warmth of home, natural textures, and rich cultural motifs.
+          We create a cozy atmosphere where every guest can enjoy a wide variety of delicious dishes,
+          feel comfortable, and experience true hospitality.
+        </p>
+      </div>
+    </div>
+
+    <!-- Картинка справа — динамический список через *ngFor -->
+    <div class="content-row reverse">
+      <img src="../../assets/images/list.png" alt="Food categories" />
+      <div class="text-block">
+        <h2>Variety of food categories:</h2>
+        <ul>
+          <li *ngFor="let categ of categories">
+            {{ categ.name }}
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Картинка слева -->
+    <div class="content-row">
+      <img src="https://avatars.mds.yandex.net/i?id=b2e29760139e356e615dec9dcfa34357-4935648-images-thumbs&n=13" alt="Delicious food" />
+      <div class="text-block">
+        <h2>The most delicious food:</h2>
+        <p>
+          At Arasan Restaurant, every dish is made with care and passion, and every flavor tells its own story.
+          We believe that all our dishes are delicious — from starters to desserts — and each one is crafted to delight your taste buds.
+          Come and taste the best of everything in one place!
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="bot">
+    <div>
+      <a target="_blank" href="https://twitter.com/"><img class="icons" src="https://cdn.freebiesupply.com/logos/large/2x/twitter-3-logo-png-transparent.png"></a>
+      <a target="_blank" href="https://www.instagram.com/"><img class="icons" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png"></a>
+      <a target="_blank" href="https://www.facebook.com/"><img class="icons" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/640px-Facebook_icon.svg.png"></a>
+      <a target="_blank" href="https://www.tiktok.com/"><img class="icons" src="https://cdn-icons-png.flaticon.com/512/3938/3938074.png"></a>
+
+      <a class="botButtons floatRight" href="">Support</a>
+      <a class="botButtons floatRight" href="">Privacy</a>
+      <a class="botButtons floatRight" href="">Security</a>
+      <a class="botButtons floatRight" href="">Status</a>
+      <a class="botButtons floatRight" href="">Contact</a>
+    </div>
+  </div>
+
+</div>

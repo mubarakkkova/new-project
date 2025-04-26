@@ -1,0 +1,8 @@
+<div class = "categTopBar">
+
+  <a *ngFor="let catr of categories"
+    class ="category" routerLink='/categories/{{catr.id}}/products'> {{ catr.name }} </a>
+
+  <router-outlet></router-outlet>
+
+</div>

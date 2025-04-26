@@ -1,0 +1,102 @@
+<img class="mainImage" src="https://img.freepik.com/premium-photo/light-bronze-orange-abstract-creative-background-design_851755-219342.jpg?semt=ais_hybrid&w=740" width="100%">
+
+<div *ngIf="!logged">
+  <div class="log">
+    <p>Username: <input type="text" [(ngModel)]="username"></p>
+    <p>Password: <input type="password" [(ngModel)]="password"></p>
+
+    <div class="botBar">
+      <div>
+        <button class="buts" id="loginButton" (click)="login()">Login</button>
+        <button class="buts" id="registerButton">Register</button>
+      </div>
+
+      <p class="logW">Login with:</p>
+      <a target="_blank" href="https://www.google.ru/"><img class="icons"
+          src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png" width="20px"></a>
+      <a target="_blank" href="https://www.google.com/intl/ru/gmail/about/"><img class="icons"
+          src="https://cdn-icons-png.flaticon.com/512/5968/5968534.png" width="20px"></a>
+      <a target="_blank" href="https://www.facebook.com/"><img class="icons"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/640px-Facebook_icon.svg.png"
+          width="20px"></a>
+      <a target="_blank" href="https://vk.com/"><img class="icons"
+          src="https://cdn.worldvectorlogo.com/logos/vk-com-logo.svg" width="20px"></a>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- <div *ngIf="!logged">
+  <div *ngIf="registrating">
+    <form>
+      <h2 class="tit">Enter your name:</h2>
+      <input class="inp" type="text" [(ngModel)]="username">
+      <h2 class="tit">Enter your email::</h2>
+      <input class="inp" type="text" [(ngModel)]="password">
+      <h2 class="tit">Password:</h2>
+      <input class="inp" type="text" [(ngModel)]="username">
+      <h2 class="tit">Password Confirmation:</h2>
+      <input class="inp" type="text" [(ngModel)]="password">
+
+      <fieldset>
+        <label for="">Enter your name:</label>
+        <input class="inp" type="text" [(ngModel)]="username">
+      </fieldset>
+    </form>
+  </div>
+</div> -->
+
+
+
+<div *ngIf="logged">
+  <button id="logoutButton" (click)="logout()">Logout</button>
+  <app-top-bar></app-top-bar>
+  <router-outlet></router-outlet>
+</div>
+
+
+
+
+<!-- 
+<div *ngIf="!logged">
+  <div *ngIf="registrating">
+    <form>
+      <fieldset>
+        <label for="">Enter your name:</label>
+        <input class="inp" type="text">
+      </fieldset>
+      <fieldset>
+        <label for="">Enter your email:</label>
+        
+        <input class="inp" type="text">
+      </fieldset>
+      <fieldset>
+        <label for="">Password:</label>
+        <input type="password" required>
+      </fieldset>
+      <fieldset>
+        <label for="">Password Confirmation:</label>
+        <input type="password" required>
+      </fieldset>
+      <fieldset>
+        <label for="">Are you agree? </label>
+        <input type="checkbox">
+      </fieldset>
+      <fieldset>
+        <label for="">City:</label>
+        <select name="" id="">
+          <option value="0">-</option>
+          <option value="1">Almaty</option>
+          <option value="2">Astana</option>
+          <option value="3">Shymkent</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <input type="submit" value="Register" (click)="register()">
+        <input type="reset" value="Reset">
+      </fieldset>
+    </form>
+  </div>
+</div> -->

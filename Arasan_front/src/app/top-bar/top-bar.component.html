@@ -1,0 +1,26 @@
+
+
+<img class="logo" src="../../assets/images/Restaurant/logo.jpg" alt="BSS logo">
+
+<div class="topBar">
+  <span class="links">
+    <a class="barButton" routerLink='/home'> Main </a>
+    <a class="barButton" routerLink='/categories'> Categories </a>
+    <a class="barButton" routerLink='/about'> About us </a>
+  </span>
+
+  <span class="search">
+    <input class="searchHolder" type="text" [(ngModel)] = "search"
+    placeholder="what are you looking for?">
+    <button class="searchButton" (click)="searchProd()">Search</button>
+  </span>
+
+  <span class="login">
+    <button class="barButton"><a routerLink='/myAccount'> MyAccount </a></button>
+    <button class="barButton"><a routerLink='/basket'> Order </a></button>
+  </span>
+</div>
+
+<img class="animaAroundSearch" src="../../assets/images/Restaurant/food1.jpg" width="50px">
+
+<img class="animaAroundSearch2" src="https://cdn-icons-png.flaticon.com/512/12/12775.png" width="50px">

@@ -1,0 +1,38 @@
+.basket {
+  margin: 2% 20% 2% 20%;
+  padding: 2%;
+  background-color: rgb(255, 218, 181);
+  border: 4px rgb(222, 184, 135);
+  border-radius: 40px 400px / 200px;
+}
+
+.urOrder {
+  text-align: center;
+  margin: 4% 10% 4% 10%;
+  background-color: rgb(222, 184, 135);
+  padding: 1%;
+}
+
+.orderItems {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  margin: 2px 20% 2px 20%;
+  padding: 8px;
+  border: 1px black solid;
+  border-radius: 4px;
+}
+
+.orderItems:nth-child(odd) {
+  background-color: rgb(240, 210, 156);
+}
+
+.orderItems:nth-child(even) {
+  background-color: rgb(255, 228, 225);
+}
+
+.removeButton {
+  float: right;
+  border: 2px rgb(255, 222, 173);
+  margin-right: 2px;
+  padding-bottom: 1px;
+}
